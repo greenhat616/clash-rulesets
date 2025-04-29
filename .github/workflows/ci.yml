@@ -8,6 +8,9 @@ jobs:
   deploy:
     name: Deno Deploy
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write # This is required to allow the GitHub Action to authenticate with Deno Deploy.
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - name: Deploy to Deno Deploy
