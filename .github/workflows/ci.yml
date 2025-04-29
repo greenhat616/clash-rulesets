@@ -16,6 +16,5 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: clash-nyanpasu-manifest
+          project: a632079-clash-rulesets
           entrypoint: jsr:@std/http/file-server
-          root: .
